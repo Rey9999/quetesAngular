@@ -6,23 +6,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonComposantComponent implements OnInit {
 
-  user = {
-    name : 'Doe',
-    firstName : 'John',
-    age : 25,
-    quote : '',
-    photo : 'https://randomuser.me/api/portraits/lego/2.jpg'
-  };
+  title: string = 'Raclette party 🧀';
 
-  toDisplay = true;
-  
-  toggleData() {
-    this.toDisplay = !this.toDisplay;
-  }
+  isThisIngredientVital: boolean = true;
+  isGuestListDisplayed : boolean = true;
+  songList: string[] = ["Alejandro", "Ne me quitte pas", "Le temps est bon"];
+  displayMovies : boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
